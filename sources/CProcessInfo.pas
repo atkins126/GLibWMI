@@ -1,5 +1,5 @@
 {
-TProcessInfo Component Version 3.0 - Suite GLibWMI
+TProcessInfo Component Version 3.1 - Suite GLibWMI
 Copyright (©) 2020,  by Germán Estévez (Neftalí)
 
 La clase Win32_Process representa una secuencia de eventos en un sistema Win32. Cualquier secuencia compuesta 
@@ -475,7 +475,7 @@ type
     /// </summary>
     function GetOwner(AInstanceProp:string; AInstanceValue:Variant;
       aDomain:string;
-      aUser:string):integer;
+      aUser:string):integer; reintroduce;
     /// <summary>
     ///  El método GetOwnerSid recupera el identificador de seguridad (SID) para el 
     ///  propietario del proceso.
